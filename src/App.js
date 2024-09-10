@@ -19,7 +19,7 @@ const stages = [
   { id: 3, name: "end" },
 ];
 
-const guessesQtd = 5;
+const guessesQtd = 9;
 
 function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
@@ -38,7 +38,7 @@ function App() {
   const [word, setWord] = useState("");
 
   //Cronometer
-  const [time, setTime] = useState(40); // Tempo inicial em segundos
+  const [time, setTime] = useState(60); // Tempo inicial em segundos
 
   useEffect(() => {
     if (gameStage === stages[1].name && time > 0) {
@@ -73,7 +73,7 @@ function App() {
   const startGame = useCallback(() => {
     // clear all letters
     clearLetterStates();
-    setTime(40); // Resetar o cronômetro
+    setTime(60); // Resetar o cronômetro
   
     // pick word and pick category
     const { word, category } = pickWordAndCategory();
@@ -156,7 +156,7 @@ function App() {
   const retry = () => {
     setScore(0);
     setGuesses(guessesQtd);
-    setTime(40); // Resetar o cronômetro
+    setTime(60); // Resetar o cronômetro
     setGameStage(stages[0].name); // Define o estado como 'start'
   };
 
