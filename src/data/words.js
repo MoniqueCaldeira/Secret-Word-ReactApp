@@ -17,6 +17,4 @@ export const wordsList = {
   "É uma Linguagem de Estilização" : ["css"],
   "É uma Linguagem de Programação" : ["javascript", "scratch"],
   "É um Ambiente de Desenvolvimento" : ["vscode"],
-  "É uma Ferramenta de Armazenamento" : ["drive"],
-  "É um Repositório" : ["github"],
 };
