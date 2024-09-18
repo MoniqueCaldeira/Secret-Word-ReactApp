@@ -82,8 +82,8 @@ function App() {
     let wordLetters = word.split("");
     wordLetters = wordLetters.map((l) => l.toLowerCase());
   
-    console.log(word, category);
-    console.log(wordLetters);
+    //console.log(word, category);
+    //console.log(wordLetters);
     setWord(word);
 
     // fill states
