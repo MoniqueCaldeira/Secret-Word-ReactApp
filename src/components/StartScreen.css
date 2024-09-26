@@ -1,5 +1,5 @@
 .start h1{
-   font-size: 3.5em;
+   font-size: 2em;
 }
 
 .start p{
@@ -8,9 +8,6 @@
    font-size: 22px;
 }
 
-.logo{
-   max-width: 35%;
-}
 
 /*media query*/
 
